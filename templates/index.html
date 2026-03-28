@@ -1,0 +1,83 @@
+<!-- templates/index.html (frontend chat UI) -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>College_Enquiry_Chatbot</title>
+    <!-- Link CSS via Flask static folder -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+<button class="mode-toggle" onclick="toggleMode()">🌙</button>
+
+<div class="chat-wrapper">
+<div class="i">
+       
+    </div>
+    <center><h1><font color="white">🎓College Enquiry ChatBot</font></h1></center>
+    <div class="chat-box" id="chatbox">
+        <div class="bot-message">Hello 👋 Ask me anything about Admissions, Fees, Placements.</div>
+    </div>
+    <div class="suggestions">
+        <button onclick="quickMsg('Admission process')">Admission</button>
+        <button onclick="quickMsg('Fees structure')">Fees</button>
+        <button onclick="quickMsg('Placement details')">Placement</button>
+    </div>
+    <div class="chat-input-area">
+        <!-- Note: name attribute not needed since we use JS fetch -->
+        <input type="text" id="userInput" placeholder="Type message..."
+               onkeypress="handleKey(event)">
+        <button onclick="startVoice()">🎤</button>
+        <button onclick="sendMessage()"><font color="black">➤</font></button>
+    </div>
+</div>
+
+<script>
+    function toggleMode()
+    {
+    document.body.classList.toggle("dark");
+    }
+function quickMsg(text){
+    document.getElementById("userInput").value = text;
+    sendMessage();
+}
+function startVoice(){
+    const recognition = new (window.SpeechRecognition || window.webkitSpeechRecognition)();
+    recognition.start();
+    recognition.onresult = function(event){
+        document.getElementById("userInput").value =
+            event.results[0][0].transcript;
+        sendMessage();
+    };
+}
+function handleKey(event){
+    if(event.key === "Enter"){
+        sendMessage();
+    }
+}
+
+function sendMessage(){
+    let inputField = document.getElementById("userInput");
+    let message = inputField.value.trim();
+    if(message === "") return;
+
+    let chatbox = document.getElementById("chatbox");
+
+    chatbox.innerHTML += `<div class="user-message">${message}</div>`;
+
+    fetch("/get", {
+        method: "POST",
+        headers: {"Content-Type": "application/x-www-form-urlencoded"},
+        body: "msg=" + message
+    })
+    .then(response => response.json())
+    .then(data => {
+        chatbox.innerHTML += `<div class="bot-message">${data.response}</div>`;
+        chatbox.scrollTop = chatbox.scrollHeight;
+    });
+
+    inputField.value = "";
+}
+</script>
+</body>
+</html>
+
