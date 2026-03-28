@@ -1,0 +1,264 @@
+{
+  "intents": [
+    {
+      "patterns": [
+        "hi", "hello", "hey", "good morning", "good evening",
+        "hii", "helloo", "hey there", "hi chatbot", "hiii",
+	      "hiiii", "hiiiii"
+      ],
+      "response": "Hello 👋 How can I help you today?"
+    },
+ {
+      "patterns": [
+        "i need your help", "please help me", "plz help me", "help me", "i need help"
+      ],
+      "response": "Sure!Sure!!👋 How can I help you?"
+    },
+    {
+      "patterns": [
+        "admission", "how to take admission", "admission process",
+        "how can I apply", "apply for admission", "is admission open",
+        "admission procedure", "how do I get admission"
+      ],
+      "response": "Admissions are open. Please visit the college website or admission office."
+    },
+
+    {
+      "patterns": [
+        "fees", "fee structure", "what is fees", "how much fees",
+        "college fees", "fees details", "annual fees",
+        "tell me fees", "fees for engineering"
+      ],
+      "response": "The annual fees for Computer Engineering, Electrical Engineering, Mechnical Engineering, Computer Science & Engineering is ₹95,000. But, if you are eligible for scholership then your fee will decrease."
+    },
+
+    {
+      "patterns": [
+        "courses", "branches", "available courses",
+        "what courses are there", "what can I study",
+        "engineering branches", "departments"
+      ],
+      "response": "We offer Computer Engineering, Mechanical Engineering, Electrical Engineering and Computer Science & Engineering."
+    },
+
+    {
+      "patterns": [
+        "hostel", "hostel facility", "is hostel available",
+        "hostel details", "accommodation", "stay facility"
+      ],
+      "response": "Yes, hostel facility is available for boys and girls."
+    },
+
+    {
+      "patterns": [
+        "placement", "placements", "placement details",
+        "job opportunities", "campus placement",
+        "companies visiting", "placement record", "what about placement"
+      ],
+      "response": "Our college has good placement records with top companies visiting every year."
+    },
+
+    {
+      "patterns": [
+        "contact", "contact details", "phone number",
+        "email", "how to contact", "college contact",
+        "office number"
+      ],
+      "response": "You can contact us at 9876543210 or email ybit123@gmail.com."
+    },
+
+    {
+      "patterns": [
+        "location", "where is college", "college address",
+        "address", "how to reach", "location of college", "give me exact location", "give me address of college", 
+	"give me address", "give me exact address of college", "give me exact address"
+      ],
+      "response": "Our college is located in Pune, Maharashtra."
+    },
+
+    {
+      "patterns": [
+        "library", "library facility", "books",
+        "study room", "reading room", "what about library"
+      ],
+      "response": "We have a well-equipped library with thousands of books and digital resources."
+    },
+
+    {
+      "patterns": [
+        "sports", "sports facilities", "ground",
+        "games", "sports activities", "what about sports"
+      ],
+      "response": "We provide various sports facilities like cricket, football, and indoor games."
+    },
+
+    {
+      "patterns": [
+        "canteen", "food", "mess", "canteen facility",
+        "food quality", "what about canteen", "what about food", "what about mess", "what about college canteen", "what about college mess"
+      ],
+      "response": "The college has a hygienic canteen with good quality food."
+    },
+
+    {
+      "patterns": [
+        "thank you", "thanks", "ok thanks", "thnx",
+        "thankyou so much"
+      ],
+      "response": "You're welcome 😊, Any other Questions?"
+    },
+
+    {
+      "patterns": [
+        "bye", "goodbye", "see you", "bye chatbot",
+        "talk later"
+      ],
+      "response": "Goodbye 👋 Have a great day!"
+    },
+    {
+      "patterns": [
+        "what is your college timing",
+        "when does college start",
+        "when does college end",
+        "is college open today",
+        "working hours of college",
+        "college opening time",
+        "college closing time"
+      ],
+      "response": "Our college operates during regular daytime hours. Please contact the office for exact timings."
+    },
+
+    {
+      "patterns": [
+        "how many students in college",
+        "total strength of college",
+        "how big is campus",
+        "campus size",
+        "number of departments"
+      ],
+      "response": "Our college has a large campus with multiple departments and many students enrolled."
+    },
+    {
+      "patterns": [
+        "who is principal of college",
+        "college management details",
+        "about faculty",
+        "teachers qualification",
+        "experienced faculty available"
+      ],
+      "response": "Our college has experienced faculty and strong management support for students."
+    },
+    {
+      "patterns": [
+        "is attendance compulsory",
+        "minimum attendance required",
+        "attendance rules",
+        "college rules",
+        "discipline in college",
+        "attendence", "what about attendence"
+      ],
+      "response": "Yes, attendance is compulsory as per university rules."
+    },
+    {
+      "patterns": [
+        "is uniform compulsory",
+        "college dress code",
+        "what to wear in college",
+        "is there any uniform"
+      ],
+      "response": "Students are expected to follow a proper dress code as per college guidelines."
+    },
+    {
+      "patterns": [
+        "does college have library timing",
+        "library open time",
+        "library closing time",
+        "can i borrow books",
+        "digital library available"
+      ],
+      "response": "The library is available with fixed timings and students can access books and digital resources."
+    },
+    {
+      "patterns": [
+        "is internship compulsory",
+        "do you provide internship",
+        "internship in which year",
+        "summer internship available",
+        "industrial training available"
+      ],
+      "response": "Internship opportunities are provided to students during their academic course."
+    },
+    {
+      "patterns": [
+        "does college have gym",
+        "gym facility available",
+        "fitness center in college",
+        "yoga classes available"
+      ],
+      "response": "Yes, the college provides fitness and sports facilities for students."
+    },
+    {
+      "patterns": [
+        "is there any fest in college",
+        "college annual fest",
+        "technical fest details",
+        "cultural events in college",
+        "sports events conducted"
+      ],
+      "response": "The college organizes various cultural, technical, and sports events every year."
+    },
+    {
+      "patterns": [
+        "does college provide certificate courses",
+        "extra courses available",
+        "value added courses",
+        "skill development programs",
+        "short term courses"
+      ],
+      "response": "Yes, we offer additional certification and skill development courses."
+    },
+    {
+      "patterns": [
+        "is there alumni network",
+        "college alumni support",
+        "alumni activities",
+        "famous alumni"
+      ],
+      "response": "Our college has an active alumni network that supports students."
+    },
+    {
+      "patterns": [
+        "can parents visit college",
+        "parent meeting available",
+        "parent teacher meeting",
+        "visitor rules"
+      ],
+      "response": "Parents can visit the college during official hours and meetings."
+    },
+    {
+      "patterns": [
+        "does college provide id card",
+        "student id compulsory",
+        "how to get id card"
+      ],
+      "response": "Yes, ID cards are provided to all students and are compulsory."
+    },
+    {
+      "patterns": [
+        "is there any ragging issue",
+        "ragging free campus",
+        "anti ragging policy"
+      ],
+      "response": "The college strictly follows anti-ragging policies to ensure student safety."
+    },
+    {
+      "patterns": [
+        "does college provide notes",
+        "study material available",
+        "online notes available"
+      ],
+      "response": "Study materials and notes are provided to students through various resources."
+    }
+  ]
+}
+
